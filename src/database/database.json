@@ -1,0 +1,27 @@
+{
+    "database": [{
+            "CITY_NAME": "Warszawa",
+            "STREET_NAME": "Szeligowska",
+            "BUILDING_NUMBER": "32A",
+            "MAX_SPEED": "Do 1000 Mb/s"
+        },
+        {
+            "CITY_NAME": "Warszawa",
+            "STREET_NAME": "Szeligowska",
+            "BUILDING_NUMBER": "32",
+            "MAX_SPEED": "Do 1000 Mb/s"
+        },
+        {
+            "CITY_NAME": "Warsza",
+            "STREET_NAME": "Szeligowska",
+            "BUILDING_NUMBER": "32",
+            "MAX_SPEED": "Do 1000 Mb/s"
+        },
+        {
+            "CITY_NAME": "Rawa Mazowiecka",
+            "STREET_NAME": "Podmiejska",
+            "BUILDING_NUMBER": "5I",
+            "MAX_SPEED": "Do 1000 Mb/s"
+        }
+    ]
+}
