@@ -89,10 +89,17 @@
             opacity: 1;
             right: 0;
         }
+    }
 
+    .mainPage_offer {
+        position: relative;
+    }
 
-
-
+    .singleOffer_text-position {
+        margin-top: 1rem;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
 
 }
@@ -159,10 +166,10 @@
             width: 90%;
             transition: all 0.5s;
             cursor: pointer;
-            margin: 5px;
-            margin: 0 1rem .3rem 1rem;
+            // margin: 5px;
+            // margin: 0 1rem .5rem 1rem;
             position: absolute;
-            bottom: 0;
+            bottom: 5px;
         }
 
         .offer_button span {
@@ -195,6 +202,16 @@
 
 
 
+    }
+
+    .mainPage_offer {
+        position: relative;
+    }
+
+    .singleOffer_text-position {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
 
 
@@ -265,9 +282,9 @@
             transition: all 0.5s;
             cursor: pointer;
             // margin: 5px;
-            margin: 0 1rem 1rem 1rem;
+            // margin: 0 1rem 1rem 1rem;
             position: absolute;
-            bottom: 0;
+            bottom: 10px;
         }
 
         .offer_button span {
@@ -295,5 +312,15 @@
             opacity: 1;
             right: 0;
         }
+    }
+
+    .mainPage_offer {
+        position: relative;
+    }
+
+    .singleOffer_text-position {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
 }

@@ -22,7 +22,7 @@
     .addressCheck {
 
         width: 100%;
-        height: auto;
+        height: 25rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -105,10 +105,7 @@
                     font-size: 1.2rem;
                 }
 
-                .suggestionListElement:hover {
-                    // border-bottom: red 2px solid;
 
-                }
             }
 
 
@@ -320,10 +317,33 @@
         justify-content: center;
         align-items: center;
     }
+
+
+    .fa-smile {
+        color: #00d5a6;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .fa-frown {
+        color: #ff008b;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media(min-width:450px)and(max-width:700px) {
+    .fa-smile {
+        color: #00d5a6;
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
 
+    .fa-frown {
+        color: #ff008b;
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
 
     // .mainPage_range {
     //     width: 100%;
@@ -347,7 +367,7 @@
     .addressCheck {
 
         width: 100%;
-        height: auto;
+        height: 25rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -430,10 +450,7 @@
                     font-size: 1.2rem;
                 }
 
-                .suggestionListElement:hover {
-                    // border-bottom: red 2px solid;
 
-                }
             }
 
 
@@ -661,6 +678,17 @@
     //     width: 100%;
     //     height: 20rem;
     // }
+    .fa-smile {
+        color: #00d5a6;
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .fa-frown {
+        color: #ff008b;
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+    }
 
     .range_petContainer {
         display: flex;
@@ -714,20 +742,7 @@
                 align-items: center;
             }
 
-            .formInputs {
-                // // margin: 0;
-                // // padding: 0;
-                // box-sizing: border-box;
-                // width: 20rem;
-                // border: lightgray 0.125rem solid;
-                // border-radius: .2rem;
-                // -webkit-box-shadow: 0 8px 6px -6px lightgray;
-                // -moz-box-shadow: 0 8px 6px -6px lightgray;
-                // box-shadow: 0 8px 6px -6px lightgray;
-                // outline: none;
-                // font-size: 1rem;
-                // text-align: center;
-            }
+
 
             .suggestionsPositioner {
 
@@ -759,10 +774,7 @@
                     font-size: 1.2rem;
                 }
 
-                .suggestionListElement:hover {
-                    // border-bottom: red 2px solid;
 
-                }
             }
 
 

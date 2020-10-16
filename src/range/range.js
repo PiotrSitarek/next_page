@@ -3,8 +3,8 @@ import { useHistory } from "react-router";
 import { Form, Field } from 'react-final-form';
 import { OnChange } from 'react-final-form-listeners';
 import netpet from '../images/netpet.jpg';
-
 import { uniqBy } from "lodash";
+// import { Link } from 'react-scroll';
 
 const Range = () => {
 
@@ -32,13 +32,13 @@ const Range = () => {
     const [cityList, setCityList] = useState([]);
     const [streetList, setStreetList] = useState([]);
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        fetch(`http://localhost:3000/database`)
-            .then((response) => response.json())
-            .then((response) => setAllDataBase(response))
+    //     fetch(`http://localhost:3000/database`)
+    //         .then((response) => response.json())
+    //         .then((response) => setAllDataBase(response))
 
-    }, []);
+    // }, []);
 
     // useEffect(() => {
     //     // fetch(`https://piotrsitarek.pl/database.json`)
@@ -47,12 +47,12 @@ const Range = () => {
     //         .then((response) => setAllDataBase(response.database))
     // }, []);
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     fetch(`https://netia-oferta.pl/database.json`)
-    //         .then((response) => response.json())
-    //         .then((response) => setAllDataBase(response.database))
-    // }, []);
+        fetch(`https://netia-zamowienia.pl/database.json`)
+            .then((response) => response.json())
+            .then((response) => setAllDataBase(response.database))
+    }, []);
 
 
 
@@ -161,6 +161,7 @@ const Range = () => {
                 addressCheck.innerHTML = "";
                 const thanks = document.createElement("p");
                 const success = document.createElement("p");
+                const smile = document.createElement("i");
 
                 const checkButtonsContainer = document.createElement("div");
 
@@ -169,6 +170,8 @@ const Range = () => {
 
                 thanks.classList.add("successInfo");
                 success.classList.add("successInfo");
+                smile.classList.add("far")
+                smile.classList.add("fa-smile")
 
                 checkButtonsContainer.classList.add("range_checkButtonsContainer");
 
@@ -177,7 +180,7 @@ const Range = () => {
                 toOfferButton.classList.add("spanCatcher");
                 toContactButton.classList.add("spanCatcher2");
 
-
+                addressCheck.appendChild(smile);
                 addressCheck.appendChild(thanks);
                 addressCheck.appendChild(success);
                 thanks.innerHTML = "Tak!";
@@ -188,11 +191,11 @@ const Range = () => {
 
 
 
-                range_checkButtonsContainer.appendChild(toOfferButton);
-                const span1button = document.querySelector(".spanCatcher");
-                const span1 = document.createElement("span");
-                span1button.appendChild(span1);
-                span1.innerHTML = "Oferta";
+                // range_checkButtonsContainer.appendChild(toOfferButton);
+                // const span1button = document.querySelector(".spanCatcher");
+                // const span1 = document.createElement("span");
+                // span1button.appendChild(span1);
+                // span1.innerHTML = "Oferta";
 
                 range_checkButtonsContainer.appendChild(toContactButton);
                 const span2button = document.querySelector(".spanCatcher2");
@@ -228,6 +231,9 @@ const Range = () => {
                 addressCheck.innerHTML = ""
                 const thanks = document.createElement("p")
                 thanks.classList.add("errorInfo")
+                const sad = document.createElement("i");
+                sad.classList.add("far");
+                sad.classList.add("fa-frown");
                 // thanks.classList.add("thanks__padding")
 
 
@@ -236,14 +242,14 @@ const Range = () => {
                 // wrongImage.classList.add("far")
                 // wrongImage.classList.add("fa-times-circle")
 
-
+                addressCheck.appendChild(sad);
                 addressCheck.appendChild(thanks);
                 thanks.innerHTML = 'Niestety, pod Twoim adresem nie posiadamy usług stacjonarnych.'
 
             }
         }}
             render={({ handleSubmit, pristine, invalid }) => (
-                <section className="addressCheck container">
+                <section className="addressCheck container" id="range_section_ID">
                     <form onSubmit={handleSubmit} className="localizationBoxContainer row ">
 
 

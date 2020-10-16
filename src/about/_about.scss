@@ -4,7 +4,7 @@
 
         .about_sliderFoto {
             width: 100%;
-            height: 35vh;
+            height: 40vh;
             opacity: .15;
 
         }
@@ -54,8 +54,9 @@
                 text-align: center;
                 font-family: $font-source;
                 font-size: .8rem;
-                padding: .4rem .4rem .4rem .4rem;
-                width: 8rem;
+                padding: .4rem 0 .4rem 0;
+                // margin-left: 12rem;
+                width: 7rem;
                 transition: all 0.5s;
                 cursor: pointer;
                 margin: 5px;
@@ -98,7 +99,7 @@
 
         .about_sliderFoto {
             width: 100%;
-            height: 55vh;
+            height: 60vh;
             opacity: .15;
         }
 
@@ -193,7 +194,7 @@
 
         .about_sliderFoto {
             width: 100%;
-            height: 60vh;
+            height: 65vh;
             opacity: .15;
 
         }
