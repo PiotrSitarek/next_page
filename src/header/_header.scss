@@ -33,111 +33,120 @@
         display: none;
     }
 
-    .mobileMenu__dropdown {
-        height: 0%;
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: rgba(1, 255, 255, 0.97);
-        overflow-x: hidden;
-        overflow-y: hidden;
-        transition: .5s;
-        position: fixed;
-    }
+    // .mobileMenu__dropdown {
+    //     height: 0%;
+    //     width: 100%;
+    //     position: fixed;
+    //     z-index: 1;
+    //     top: 0;
+    //     left: 0;
+    //     background-color: rgba(1, 255, 255, 0.97);
+    //     overflow-x: hidden;
+    //     overflow-y: hidden;
+    //     transition: .5s;
+    //     position: fixed;
+    // }
 
-    .mobileDropdown__content {
-        position: relative;
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 1.875rem;
-    }
+    // .mobileDropdown__content {
+    //     position: relative;
+    //     top: 25%;
+    //     width: 100%;
+    //     text-align: center;
+    //     margin-top: 1.875rem;
+    // }
 
-    .mobileMenu__dropdown .mobileMenu__link {
-        padding: 0.5rem;
-        text-decoration: none;
-        font-size: 2.25rem;
-        color: #333;
-        display: block;
-        transition: 0.3s;
-    }
+    // .mobileMenu__dropdown .mobileMenu__link {
+    //     padding: 0.5rem;
+    //     text-decoration: none;
+    //     font-size: 2.25rem;
+    //     color: #333;
+    //     display: block;
+    //     transition: 0.3s;
+    // }
 
-    .mobileMenu__dropdown .mobileMenu__link:hover,
-    .mobileMenu__dropdown .mobileMenu__link:focus {
-        color: rgb(0, 159, 227)
-    }
-
-
-    .burgerIcon {
-        margin: 1rem 1rem 1rem 1rem;
-        z-index: 2;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .burgerIcon__lineContainer .burgerIcon__line {
-        width: 2rem;
-        height: 0.3rem;
-        background-color: #333;
-        display: block;
-        margin: 8px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .burgerIcon__lineContainer:hover {
-        cursor: pointer;
-    }
+    // .mobileMenu__dropdown .mobileMenu__link:hover,
+    // .mobileMenu__dropdown .mobileMenu__link:focus {
+    //     color: rgb(0, 159, 227)
+    // }
 
 
-    .burgerIcon__action.is-active {
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        -webkit-transition-delay: 0.6s;
-        -o-transition-delay: 0.6s;
-        transition-delay: 0.6s;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
+    // .burgerIcon {
+    //     margin: 1rem 1rem 1rem 1rem;
+    //     z-index: 2;
+    //     -webkit-box-sizing: border-box;
+    //     -moz-box-sizing: border-box;
+    //     box-sizing: border-box;
+    //     text-align: center;
+    // }
 
-    .burgerIcon__action.is-active .burgerIcon__line:nth-child(2) {
-        width: 0px;
-    }
+    // .burgerIcon__lineContainer .burgerIcon__line {
+    //     width: 2rem;
+    //     height: 0.3rem;
+    //     background-color: #333;
+    //     display: block;
+    //     margin: 8px auto;
+    //     -webkit-transition: all 0.3s ease-in-out;
+    //     -o-transition: all 0.3s ease-in-out;
+    //     transition: all 0.3s ease-in-out;
+    // }
 
-    .burgerIcon__action.is-active .burgerIcon__line:nth-child(1),
-    .burgerIcon__action.is-active .burgerIcon__line:nth-child(3) {
-        -webkit-transition-delay: 0.3s;
-        -o-transition-delay: 0.3s;
-        transition-delay: 0.3s;
-    }
+    // .burgerIcon__lineContainer:hover {
+    //     cursor: pointer;
+    // }
 
-    .burgerIcon__action.is-active .burgerIcon__line:nth-child(1) {
-        -webkit-transform: translateY(13px);
-        -ms-transform: translateY(13px);
-        -o-transform: translateY(13px);
-        transform: translateY(13px);
-    }
 
-    .burgerIcon__action.is-active .burgerIcon__line:nth-child(3) {
-        -webkit-transform: translateY(-13px) rotate(90deg);
-        -ms-transform: translateY(-13px) rotate(90deg);
-        -o-transform: translateY(-13px) rotate(90deg);
-        transform: translateY(-13px) rotate(90deg);
-    }
+    // .burgerIcon__action.is-active {
+    //     -webkit-transition: all 0.3s ease-in-out;
+    //     -o-transition: all 0.3s ease-in-out;
+    //     transition: all 0.3s ease-in-out;
+    //     -webkit-transition-delay: 0.6s;
+    //     -o-transition-delay: 0.6s;
+    //     transition-delay: 0.6s;
+    //     -webkit-transform: rotate(45deg);
+    //     -ms-transform: rotate(45deg);
+    //     -o-transform: rotate(45deg);
+    //     transform: rotate(45deg);
+    // }
+
+    // .burgerIcon__action.is-active .burgerIcon__line:nth-child(2) {
+    //     width: 0px;
+    // }
+
+    // .burgerIcon__action.is-active .burgerIcon__line:nth-child(1),
+    // .burgerIcon__action.is-active .burgerIcon__line:nth-child(3) {
+    //     -webkit-transition-delay: 0.3s;
+    //     -o-transition-delay: 0.3s;
+    //     transition-delay: 0.3s;
+    // }
+
+    // .burgerIcon__action.is-active .burgerIcon__line:nth-child(1) {
+    //     -webkit-transform: translateY(13px);
+    //     -ms-transform: translateY(13px);
+    //     -o-transform: translateY(13px);
+    //     transform: translateY(13px);
+    // }
+
+    // .burgerIcon__action.is-active .burgerIcon__line:nth-child(3) {
+    //     -webkit-transform: translateY(-13px) rotate(90deg);
+    //     -ms-transform: translateY(-13px) rotate(90deg);
+    //     -o-transform: translateY(-13px) rotate(90deg);
+    //     transform: translateY(-13px) rotate(90deg);
+    // }
 
 }
 
 @media(min-width:450px)and(max-width:700px) {
-    .navigation_list_mobile {
+
+    .mobilePageNav_remove {
         display: none;
+    }
+
+    .navigation_list_mobile {
+        font-family: $font-source;
+        font-size: 1rem;
+        margin: 0 .3rem 0 .3rem;
+        cursor: pointer;
+        text-decoration: none;
     }
 
     .header_none {
@@ -147,7 +156,9 @@
     .mainPage_header {
         height: 6rem;
         display: flex;
+        justify-content: space-between;
         align-items: center;
+
         position: relative;
 
         .header_logo {
@@ -158,23 +169,23 @@
         }
     }
 
-    .header_navigation {
-        position: absolute;
-        right: 0;
+    // .header_navigation {
+    //     position: absolute;
+    //     right: 0;
 
-        .header_navigation-list {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+    //     .header_navigation-list {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: flex-end;
 
-            .navigation_list-elements {
-                font-family: $font-source;
-                font-size: 1rem;
-                margin: 0 .4rem 0 0;
-                cursor: pointer;
-            }
-        }
-    }
+    //         .navigation_list-elements {
+    //             font-family: $font-source;
+    //             font-size: 1rem;
+    //             margin: 0 .4rem 0 0;
+    //             cursor: pointer;
+    //         }
+    //     }
+    // }
 
     .mobileMenu__dropdown {
         display: none;
@@ -182,8 +193,58 @@
 }
 
 @media(min-width:700px) {
-    .navigation_list_mobile {
+    .about_button {
+        border-radius: 4px;
+        background-color: #00D6A6;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: $font-source;
+        font-size: 1rem;
+        padding: .5rem .5rem .5rem .5rem;
+        width: 8rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .about_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
+    }
+
+    .about_button span:after {
+
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .about_button:hover span {
+        padding-right: 25px;
+    }
+
+    .about_button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .mobilePageNav_remove {
         display: none;
+    }
+
+    .navigation_list_mobile {
+        font-family: $font-source;
+        font-size: 1rem;
+        margin: 0 .3rem 0 .3rem;
+        cursor: pointer;
+        text-decoration: none;
     }
 
     .header_none {
@@ -194,7 +255,8 @@
         height: 6rem;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+
 
 
         .header_logo {
@@ -205,22 +267,22 @@
         }
     }
 
-    .header_navigation {
+    // .header_navigation {
 
 
-        .header_navigation-list {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+    //     .header_navigation-list {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: flex-end;
 
-            .navigation_list-elements {
-                font-family: $font-source;
-                font-size: 1.2rem;
-                margin: 0 1rem 0 0;
-                cursor: pointer;
-            }
-        }
-    }
+    //         .navigation_list-elements {
+    //             font-family: $font-source;
+    //             font-size: 1.2rem;
+    //             margin: 0 1rem 0 0;
+    //             cursor: pointer;
+    //         }
+    //     }
+    // }
 
     .mobileMenu__dropdown {
         display: none;
@@ -233,6 +295,48 @@
         width: 150px;
         height: 14.59px;
     }
+
+    .about_button {
+        border-radius: 4px;
+        background-color: #00D6A6;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: $font-source;
+        font-size: .6rem;
+        padding: .4rem 0 .4rem 0;
+        width: 4rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .about_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
+    }
+
+    .about_button span:after {
+
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+    }
+
+    .about_button:hover span {
+        padding-right: 10px;
+    }
+
+    .about_button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
 }
 
 @media(min-width:450px)and(max-width:500px) {
@@ -241,13 +345,97 @@
         width: 150px;
         height: 14.59px;
     }
+
+    .about_button {
+        border-radius: 4px;
+        background-color: #00D6A6;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: $font-source;
+        font-size: .6rem;
+        padding: .4rem 0 .4rem 0;
+        width: 4.6rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .about_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
+    }
+
+    .about_button span:after {
+
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+    }
+
+    .about_button:hover span {
+        padding-right: 10px;
+    }
+
+    .about_button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
 }
 
 @media(min-width:500px)and(max-width:550px) {
     .logoNetia {
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         width: 180px;
         height: 17.508px;
+    }
+
+    .about_button {
+        border-radius: 4px;
+        background-color: #00D6A6;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: $font-source;
+        font-size: .65rem;
+        padding: .4rem 0 .4rem 0;
+        width: 4.75rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .about_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
+    }
+
+    .about_button span:after {
+
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+    }
+
+    .about_button:hover span {
+        padding-right: 10px;
+    }
+
+    .about_button:hover span:after {
+        opacity: 1;
+        right: 0;
     }
 }
 
@@ -257,12 +445,101 @@
         width: 210px;
         height: 20.426px;
     }
+
+    .about_button {
+        border-radius: 4px;
+        background-color: #00D6A6;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: $font-source;
+        font-size: .7rem;
+        padding: .5rem 0 .5rem 0;
+        width: 5rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .about_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
+    }
+
+    .about_button span:after {
+
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+    }
+
+    .about_button:hover span {
+        padding-right: 15px;
+    }
+
+    .about_button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
 }
 
 @media(min-width:700px)and(max-width:950px) {
     .logoNetia {
         width: 240px;
         height: 23.344px;
+        margin-left: 3rem;
+    }
+
+    .navigation_list_mobile {
+        margin-right: 5rem;
+    }
+
+    .about_button {
+        border-radius: 4px;
+        background-color: #00D6A6;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: $font-source;
+        font-size: .8rem;
+        padding: .5rem .5rem .5rem .5rem;
+        width: 6.85rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .about_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
+    }
+
+    .about_button span:after {
+
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .about_button:hover span {
+        padding-right: 25px;
+    }
+
+    .about_button:hover span:after {
+        opacity: 1;
+        right: 0;
     }
 }
 
@@ -270,5 +547,10 @@
     .logoNetia {
         width: 300px;
         height: 29.18px;
+        margin-left: 5rem;
+    }
+
+    .navigation_list_mobile {
+        margin-right: 5rem;
     }
 }

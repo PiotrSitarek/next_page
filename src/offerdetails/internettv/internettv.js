@@ -5,14 +5,15 @@ import Footer from '../../footer/footer';
 import Border from '../../border/border';
 import { Link } from 'react-scroll';
 import listaProgramow from '../../images/listaprogramow.jpg';
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
+import { Link as Router } from 'react-router-dom';
 
 const Internettv = () => {
 
-    const history = useHistory();
-    const toContactSection = () => {
-        history.push("/Kontakt")
-    }
+    // const history = useHistory();
+    // const toContactSection = () => {
+    //     history.push("/Kontakt")
+    // }
 
     return (
         <>
@@ -20,7 +21,7 @@ const Internettv = () => {
             <Header />
             <section className="offerDetails_internetTv">
                 <div className="icon_container">
-                    <i class="fas fa-wifi"></i> + <i class="fas fa-tv"></i>
+                    <i className="fas fa-wifi"></i> + <i className="fas fa-tv"></i>
                 </div>
 
                 <h1 className="offerDetails_internet-text">Internet światłowodowy</h1>
@@ -42,7 +43,8 @@ const Internettv = () => {
                     <p className="internet_add-text internet_add-text-tel">- Telefon stacjonarny BEZ LIMITU za 10 zł!</p>
                     <p className="internet_add-text internet_add-text-tel">- Telefon komórkowy BEZ LIMITU+2 GB za 20 zł!</p>
                 </div>
-                <button onClick={toContactSection} className="toContactSection_button"><span>Zamów</span></button>
+
+                <Router to="/Kontakt"><button className="toContactSection_button"><span>Zamów</span></button>  </Router>
                 <Border />
                 <p className="internet_add-text internet_add-text-options">pozostałe opcje internetu z telewizją:</p>
                 <h1 className="offerDetails_internet-text offerDetails_internet-text-other">Internet światłowodowy</h1>
@@ -70,7 +72,7 @@ const Internettv = () => {
                 <p className="internet_add-text internet_add-text-list101"><Link to="programList_section_ID" smooth={true} duration={1500}>Lista programów</Link></p>
 
                 <Border />
-                <img src={listaProgramow} id="programList_section_ID"></img>
+                <img src={listaProgramow} id="programList_section_ID" alt="lista_programów"></img>
             </section>
 
             <Footer />

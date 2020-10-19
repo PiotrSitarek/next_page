@@ -254,7 +254,7 @@ const Range = () => {
 
 
                         <label className="addressCheck__label">
-                            <h1 className="searchInfo">Nasze usługi w Twoim domu?</h1>
+                            <h1 className="searchInfo">Usługi Netii w Twoim domu?</h1>
                             <h1 className="searchInfo">Sprawdź czy to możliwe!</h1>
                             <Field name="cityName" validate={required}>
                                 {({ input, meta }) => (

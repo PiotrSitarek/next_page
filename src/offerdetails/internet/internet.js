@@ -1,16 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import TopBar from '../../topBar/topBar';
 import Header from '../../header/header';
 import Footer from '../../footer/footer';
 import Border from '../../border/border';
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
+import { Link } from 'react-router-dom';
 
 
 const Internet = () => {
-    const history = useHistory();
-    const toContactSection = () => {
-        history.push("/Kontakt")
-    }
+    // const history = useHistory();
+    // const toContactSection = () => {
+    //     history.push("/Kontakt")
+    // }
 
 
     return (
@@ -18,7 +19,7 @@ const Internet = () => {
             <TopBar id="netbartop" />
             <Header />
             <section className="offerDetails_internet">
-                <i class="fas fa-wifi"></i>
+                <i className="fas fa-wifi"></i>
                 <h1 className="offerDetails_internet-text">Internet światłowodowy</h1>
                 <p className="offerDetails_internet-text">300 Mb/s z wifi</p>
                 <p className="offerDetails_internet-text">50 zł brutto miesięcznie</p>
@@ -31,7 +32,8 @@ const Internet = () => {
                     <p className="internet_add-text"></p>
                     <p></p>
                 </div>
-                <button onClick={toContactSection} className="toContactSection_button"><span>Zamów</span></button>
+                {/* <button onClick={toContactSection} className="toContactSection_button"><span>Zamów</span></button> */}
+                <Link to="/Kontakt"><button className="toContactSection_button"><span>Zamów</span></button></Link>
                 <Border />
                 <p className="internet_add-text">pozostałe opcje prędkości internetu:</p>
 
