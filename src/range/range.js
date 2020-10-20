@@ -4,29 +4,13 @@ import { Form, Field } from 'react-final-form';
 import { OnChange } from 'react-final-form-listeners';
 import netpet from '../images/netpet.jpg';
 import { uniqBy } from "lodash";
-// import { Link } from 'react-scroll';
 
 const Range = () => {
-
-    // useEffect(() => {
-    //     const rangePetCatcher = document.getElementsByClassName("range_pet");
-
-    //     // console.log(rangePetCatcher)
-    //     rangePetCatcher.addEventListener("click", function (event) {
-
-    //         // rangePetCatcher.classList.add("petRotate")
-    //         console.log("xxx")
-
-    //     });
-    // });
 
     const rotate = () => {
         const rangePetCatcher = document.querySelector(".range_pet");
         rangePetCatcher.classList.add("petRotate")
     }
-
-
-
     const history = useHistory();
     const [allDataBase, setAllDataBase] = useState([]);
     const [cityList, setCityList] = useState([]);
@@ -126,8 +110,7 @@ const Range = () => {
             </ul>
         )
     }
-    // ^[1-9]{1}[0-9]{8}$
-    // const buildingNumberFormula = /[0-9]*[a-zA-Z]/i;
+
     const buildingNumberFormula = /[0-9]+[abc]*/;
     const required = value => (value ? undefined : 'Uzupełnij powyższe pole...')
     const buildingNumberValidator = value => (buildingNumberFormula.test(value) ? undefined : 'Uzupełnij powyższe pole...')
@@ -150,7 +133,7 @@ const Range = () => {
             rotate();
 
             const myAddress = allDataBase.filter((element) => {
-                // tutaj ustawię regułę aby wielkość litery w numerze budynku nie miała znaczenia            
+
                 const correctBuildingNumber = fields.buildingNumber.toUpperCase();
 
                 return (cityText === element.CITY_NAME && streetText === element.STREET_NAME && correctBuildingNumber === element.BUILDING_NUMBER)
@@ -190,26 +173,11 @@ const Range = () => {
                 const range_checkButtonsContainer = document.querySelector(".range_checkButtonsContainer");
 
 
-
-                // range_checkButtonsContainer.appendChild(toOfferButton);
-                // const span1button = document.querySelector(".spanCatcher");
-                // const span1 = document.createElement("span");
-                // span1button.appendChild(span1);
-                // span1.innerHTML = "Oferta";
-
                 range_checkButtonsContainer.appendChild(toContactButton);
                 const span2button = document.querySelector(".spanCatcher2");
                 const span2 = document.createElement("span");
                 span2button.appendChild(span2);
                 span2.innerHTML = "Kontakt";
-
-
-
-
-                // const offerButton = document.querySelector(".about_button");
-                // offerButton.addEventListener("click", function () {
-                //     history.push("/Oferty")
-                // });
 
                 const offerButton = document.querySelector(".about_button");
                 offerButton.addEventListener("click", function () {
@@ -234,14 +202,6 @@ const Range = () => {
                 const sad = document.createElement("i");
                 sad.classList.add("far");
                 sad.classList.add("fa-frown");
-                // thanks.classList.add("thanks__padding")
-
-
-                // const wrongImage = document.createElement("i");
-                // addressCheck.appendChild(wrongImage);
-                // wrongImage.classList.add("far")
-                // wrongImage.classList.add("fa-times-circle")
-
                 addressCheck.appendChild(sad);
                 addressCheck.appendChild(thanks);
                 thanks.innerHTML = 'Niestety, pod Twoim adresem nie posiadamy usług stacjonarnych.'

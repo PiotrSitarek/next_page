@@ -3,15 +3,10 @@ import TopBar from '../../topBar/topBar';
 import Header from '../../header/header';
 import Footer from '../../footer/footer';
 import Border from '../../border/border';
-// import { useHistory } from "react-router";
 import { Link } from 'react-router-dom';
 
 
 const Internet = () => {
-    // const history = useHistory();
-    // const toContactSection = () => {
-    //     history.push("/Kontakt")
-    // }
 
 
     return (
@@ -32,7 +27,7 @@ const Internet = () => {
                     <p className="internet_add-text"></p>
                     <p></p>
                 </div>
-                {/* <button onClick={toContactSection} className="toContactSection_button"><span>Zamów</span></button> */}
+
                 <Link to="/Kontakt"><button className="toContactSection_button"><span>Zamów</span></button></Link>
                 <Border />
                 <p className="internet_add-text">pozostałe opcje prędkości internetu:</p>
@@ -44,9 +39,6 @@ const Internet = () => {
                 <p className="offerDetails_internet-text">70 zł brutto miesięcznie</p>
                 <Border />
                 <p className="offerDetails_internet-text offerDetails_internet-text-other">Dostępne również umowy na czas 9 miesięcy!</p>
-
-
-
             </section>
             <Footer />
         </>

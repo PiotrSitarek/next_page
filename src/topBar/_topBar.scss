@@ -8,14 +8,12 @@
         border-bottom: #f1e8e8 solid 1px;
 
         .topBar_mailContainer {
-            // width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .topBar_phoneContainer {
-            // width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,14 +41,11 @@
             color: #00D6A6;
         }
 
-        // .mainPage_topBar_mail {}
-
         .mainPage_topBar_mail:hover {
             transition: .5s;
             color: #00D6A6;
         }
 
-        // .mainPage_topBar_icon_envelope {}
     }
 
 
@@ -229,7 +224,6 @@
         align-items: center;
         z-index: 2;
         background-color: rgba(51, 51, 51, .98);
-        // top: 2rem;
         bottom: 0;
         height: 6rem;
         width: 100%;

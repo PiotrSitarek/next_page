@@ -1,11 +1,8 @@
 import React from 'react';
 import { useHistory } from "react-router";
-// import { Link } from 'react-router-dom';
-
 
 const Offer = () => {
     const history = useHistory();
-
 
     const toInternetDetails = () => {
         history.push("/Internet")
@@ -42,7 +39,7 @@ const Offer = () => {
                     <p className="singleOffer_text">300 Mb/s z wifi</p>
                     <p className="singleOffer_text">50zł*</p>
                     <button onClick={toInternetDetails} className="offer_button"><span>Szczegóły</span></button>
-                    {/* <Link to="/Internet"><button className="offer_button"><span>Szczegóły</span></button></Link> */}
+
                 </div>
                 <div className="offer_singleOffer">
                     <h1 className="singleOffer_text">Internet + telewizja</h1>
@@ -50,8 +47,6 @@ const Offer = () => {
                     <p className="singleOffer_text">+ 100 programów</p>
                     <p className="singleOffer_text">60zł*</p>
                     <button onClick={toInternetTvDetails} className="offer_button"><span>Szczegóły</span></button>
-                    {/* <Link to="/Internet+Telewizja_M"> <button className="offer_button"><span>Szczegóły</span></button></Link> */}
-
                 </div>
                 <div className="offer_singleOffer">
                     <h1 className="singleOffer_text">Internet + telewizja</h1>
@@ -59,7 +54,6 @@ const Offer = () => {
                     <p className="singleOffer_text">+ 183 programy</p>
                     <p className="singleOffer_text">80zł*</p>
                     <button onClick={toInternetTvMaxDetails} className="offer_button"><span>Szczegóły</span></button>
-                    {/* <Link to="/Internet+Telewizja_L"><button className="offer_button"><span>Szczegóły</span></button></Link> */}
                 </div>
 
 

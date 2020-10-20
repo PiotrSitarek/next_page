@@ -16,7 +16,6 @@ const TopBar = () => {
 
     const cookieInfoReaction = () => {
         const cookiesInfo_container = document.querySelector(".cookiesInfo_container")
-        // console.log(cookiesInfo_container.style.display + "none")
         cookiesInfo_container.style.display = "none";
         sessionStorage.setItem("cookieInfo", "Consent");
     }

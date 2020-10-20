@@ -1,10 +1,5 @@
 @media (max-width: 450px) {
 
-    // .mainPage_range {
-    //     width: 100%;
-    //     height: 20rem;
-    // }
-
     .range_petContainer {
         display: flex;
         justify-content: center;
@@ -16,30 +11,23 @@
         width: 50%;
         height: 50%;
         border-radius: 50%;
-
     }
 
     .addressCheck {
-
         width: 100%;
         height: 25rem;
         display: flex;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        // background-color: lightskyblue;
 
         .localizationBoxContainer {
-            // max-height: calc(100vh - 17rem);
-            // height: calc(100vh - 17rem);
+
             width: 70%;
-            // padding: 2rem 0 2rem 0;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            // background-color: lime;
-
 
             .searchInfo {
                 font-family: $font-source;
@@ -51,7 +39,6 @@
 
             .addressCheck__label {
                 margin: 1px;
-                // height: calc(100vh - 17rem);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -60,18 +47,6 @@
 
             .formInputs {
                 font-family: $font-source;
-                // // margin: 0;
-                // // padding: 0;
-                // box-sizing: border-box;
-                // width: 20rem;
-                // border: lightgray 0.125rem solid;
-                // border-radius: .2rem;
-                // -webkit-box-shadow: 0 8px 6px -6px lightgray;
-                // -moz-box-shadow: 0 8px 6px -6px lightgray;
-                // box-shadow: 0 8px 6px -6px lightgray;
-                // outline: none;
-                // font-size: 1rem;
-                // text-align: center;
             }
 
             .suggestionsPositioner {
@@ -86,12 +61,8 @@
             .suggestionsList {
                 position: absolute;
                 top: 3rem;
-                // box-sizing: border-box;
                 width: auto;
-
-                // border: 2px solid lightgray;
                 border-top: none;
-                // border-radius: 0.1rem 0.1rem 0.625rem 0.625rem;
                 background: white;
                 height: 65px;
 
@@ -104,10 +75,7 @@
                     font-family: $font-source;
                     font-size: 1.2rem;
                 }
-
-
             }
-
 
             .formInputs:last-of-type {
                 margin: 1rem 0 1rem 0;
@@ -165,9 +133,6 @@
                 font-size: .8rem;
                 padding: .4rem .4rem .4rem .4rem;
                 width: 8rem;
-
-
-
                 transition: all 0.5s;
                 cursor: pointer;
                 margin: 5px;
@@ -199,102 +164,8 @@
                 opacity: 1;
                 right: 0;
             }
-
-
-
-
-
-
-
-
-
-
-            // .checkAddressButton {
-            //     background-color: #d31da5;
-            //     border: none;
-            //     border-radius: 2rem;
-            //     color: white;
-            //     padding: 0.3rem 1rem;
-            //     text-align: center;
-            //     font-size: 1rem;
-            //     margin: 1rem 0.125rem;
-            //     opacity: 0.7;
-            //     transition: 0.3s;
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     cursor: pointer;
-            //     outline: none;
-            // }
-
-            // .checkAddressButton:hover {
-            //     opacity: 1;
-            //     outline: none;
-
-            // }
-
-            // .toOfferButton {
-            //     background-color: #d31da5;
-            //     border: none;
-            //     border-radius: 2rem;
-            //     color: white;
-            //     padding: 0.3rem 1rem;
-            //     text-align: center;
-            //     font-size: 1rem;
-            //     margin: 0.1rem 0.125rem;
-            //     opacity: 0.7;
-            //     transition: 0.3s;
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     cursor: pointer;
-            //     outline: none;
-            // }
-
-            // .toOfferButton:hover {
-            //     opacity: 1
-            // }
-
-            // .toContactButton {
-            //     background-color: #d31da5;
-            //     border: none;
-            //     border-radius: 2rem;
-            //     color: white;
-            //     padding: 0.3rem 1rem;
-            //     text-align: center;
-            //     font-size: 1rem;
-            //     margin: 0.1rem 0.125rem;
-            //     opacity: 0.7;
-            //     transition: 0.3s;
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     cursor: pointer;
-            //     outline: none;
-            // }
-
-            // .toContactButton:hover {
-            //     opacity: 1
-            // }
         }
     }
-
-    // .addresscheck__error {
-    //     font-size: .7rem;
-    //     text-align: center;
-    //     color: red;
-    // }
-
-    // .thanks__padding {
-    //     padding: 1rem 0 1rem 0;
-    // }
-
-    // .fa-check-circle {
-    //     color: rgb(0, 214, 166);
-    //     font-size: 4rem;
-    // }
-
-    // .fa-times-circle {
-    //     color: #d929ae;
-    //     font-size: 4rem;
-    // }
 
     .errorInfo {
         font-family: $font-source;
@@ -345,11 +216,6 @@
         margin-bottom: 1.5rem;
     }
 
-    // .mainPage_range {
-    //     width: 100%;
-    //     height: 20rem;
-    // }
-
     .range_petContainer {
         display: flex;
         justify-content: center;
@@ -372,19 +238,14 @@
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        // background-color: lightskyblue;
 
         .localizationBoxContainer {
-            // max-height: calc(100vh - 17rem);
-            // height: calc(100vh - 17rem);
+
             width: 70%;
-            // padding: 2rem 0 2rem 0;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            // background-color: lime;
-
 
             .searchInfo {
                 font-family: $font-source;
@@ -396,7 +257,6 @@
 
             .addressCheck__label {
                 margin: 1px;
-                // height: calc(100vh - 17rem);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -405,18 +265,6 @@
 
             .formInputs {
                 font-family: $font-source;
-                // // margin: 0;
-                // // padding: 0;
-                // box-sizing: border-box;
-                // width: 20rem;
-                // border: lightgray 0.125rem solid;
-                // border-radius: .2rem;
-                // -webkit-box-shadow: 0 8px 6px -6px lightgray;
-                // -moz-box-shadow: 0 8px 6px -6px lightgray;
-                // box-shadow: 0 8px 6px -6px lightgray;
-                // outline: none;
-                // font-size: 1rem;
-                // text-align: center;
             }
 
             .suggestionsPositioner {
@@ -431,15 +279,10 @@
             .suggestionsList {
                 position: absolute;
                 top: 3rem;
-                // box-sizing: border-box;
                 width: auto;
-
-                // border: 2px solid lightgray;
                 border-top: none;
-                // border-radius: 0.1rem 0.1rem 0.625rem 0.625rem;
                 background: white;
                 height: 65px;
-
                 z-index: 1;
 
                 .suggestionListElement {
@@ -449,10 +292,7 @@
                     font-family: $font-source;
                     font-size: 1.2rem;
                 }
-
-
             }
-
 
             .formInputs:last-of-type {
                 margin: 1rem 0 1rem 0;
@@ -465,14 +305,9 @@
                 color: #FFFFFF;
                 text-align: center;
                 font-family: $font-source;
-
-
-
                 font-size: 1rem;
                 padding: .5rem .5rem .5rem .5rem;
                 width: 8rem;
-
-
                 transition: all 0.5s;
                 cursor: pointer;
                 margin: 5px;
@@ -516,10 +351,6 @@
                 font-size: 1rem;
                 padding: .5rem .5rem .5rem .5rem;
                 width: 8rem;
-
-                // font-size: .9rem;
-                // padding: .4rem .4rem .4rem .4rem;
-                // width: 8rem;
                 transition: all 0.5s;
                 cursor: pointer;
                 margin: 5px;
@@ -551,101 +382,8 @@
                 opacity: 1;
                 right: 0;
             }
-
-            // .checkAddressButton {
-            //     background-color: #d31da5;
-            //     border: none;
-            //     border-radius: 2rem;
-            //     color: white;
-            //     padding: 0.3rem 1rem;
-            //     text-align: center;
-            //     font-size: 1rem;
-            //     margin: 1rem 0.125rem;
-            //     opacity: 0.7;
-            //     transition: 0.3s;
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     cursor: pointer;
-            //     outline: none;
-            // }
-
-            // .checkAddressButton:hover {
-            //     opacity: 1;
-            //     outline: none;
-
-            // }
-
-            // .toOfferButton {
-            //     background-color: #d31da5;
-            //     border: none;
-            //     border-radius: 2rem;
-            //     color: white;
-            //     padding: 0.3rem 1rem;
-            //     text-align: center;
-            //     font-size: 1rem;
-            //     margin: 0.1rem 0.125rem;
-            //     opacity: 0.7;
-            //     transition: 0.3s;
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     cursor: pointer;
-            //     outline: none;
-            // }
-
-            // .toOfferButton:hover {
-            //     opacity: 1
-            // }
-
-            // .toContactButton {
-            //     background-color: #d31da5;
-            //     border: none;
-            //     border-radius: 2rem;
-            //     color: white;
-            //     padding: 0.3rem 1rem;
-            //     text-align: center;
-            //     font-size: 1rem;
-            //     margin: 0.1rem 0.125rem;
-            //     opacity: 0.7;
-            //     transition: 0.3s;
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     cursor: pointer;
-            //     outline: none;
-            // }
-
-            // .toContactButton:hover {
-            //     opacity: 1
-            // }
-
-
-
-
-
-
-
         }
     }
-
-    // .addresscheck__error {
-    //     font-family: $font-source;
-    //     font-size: .7rem;
-    //     text-align: center;
-    //     color: red;
-    // }
-
-    // .thanks__padding {
-    //     padding: 1rem 0 1rem 0;
-    // }
-
-    // .fa-check-circle {
-    //     color: rgb(0, 214, 166);
-    //     font-size: 4rem;
-    // }
-
-    // .fa-times-circle {
-    //     color: #d929ae;
-    //     font-size: 4rem;
-    // }
 
     .errorInfo {
         font-family: $font-source;
@@ -673,11 +411,6 @@
 }
 
 @media(min-width:700px) {
-
-    // .mainPage_range {
-    //     width: 100%;
-    //     height: 20rem;
-    // }
     .fa-smile {
         color: #00d5a6;
         font-size: 5rem;
@@ -715,10 +448,7 @@
         box-sizing: border-box;
 
         .localizationBoxContainer {
-            // max-height: calc(100vh - 17rem);
-            // height: calc(100vh - 17rem);
             width: 50%;
-            // padding: 2rem 0 2rem 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -735,7 +465,6 @@
 
             .addressCheck__label {
                 margin: 1px;
-                // height: calc(100vh - 17rem);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -756,15 +485,10 @@
             .suggestionsList {
                 position: absolute;
                 top: 3rem;
-                // box-sizing: border-box;
                 width: auto;
-
-                // border: 2px solid lightgray;
                 border-top: none;
-                // border-radius: 0.1rem 0.1rem 0.625rem 0.625rem;
                 background: white;
                 height: 65px;
-
                 z-index: 1;
 
                 .suggestionListElement {
@@ -773,8 +497,6 @@
                     text-align: center;
                     font-size: 1.2rem;
                 }
-
-
             }
 
 
@@ -865,100 +587,8 @@
                 opacity: 1;
                 right: 0;
             }
-
-            // .checkAddressButton {
-            //     background-color: #d31da5;
-            //     border: none;
-            //     border-radius: 2rem;
-            //     color: white;
-            //     padding: 0.3rem 1rem;
-            //     text-align: center;
-            //     font-size: 1rem;
-            //     margin: 1rem 0.125rem;
-            //     opacity: 0.7;
-            //     transition: 0.3s;
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     cursor: pointer;
-            //     outline: none;
-            // }
-
-            // .checkAddressButton:hover {
-            //     opacity: 1;
-            //     outline: none;
-
-            // }
-
-            // .toOfferButton {
-            //     background-color: #d31da5;
-            //     border: none;
-            //     border-radius: 2rem;
-            //     color: white;
-            //     padding: 0.3rem 1rem;
-            //     text-align: center;
-            //     font-size: 1rem;
-            //     margin: 0.1rem 0.125rem;
-            //     opacity: 0.7;
-            //     transition: 0.3s;
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     cursor: pointer;
-            //     outline: none;
-            // }
-
-            // .toOfferButton:hover {
-            //     opacity: 1
-            // }
-
-            // .toContactButton {
-            //     background-color: #d31da5;
-            //     border: none;
-            //     border-radius: 2rem;
-            //     color: white;
-            //     padding: 0.3rem 1rem;
-            //     text-align: center;
-            //     font-size: 1rem;
-            //     margin: 0.1rem 0.125rem;
-            //     opacity: 0.7;
-            //     transition: 0.3s;
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     cursor: pointer;
-            //     outline: none;
-            // }
-
-            // .toContactButton:hover {
-            //     opacity: 1
-            // }
-
-
-
-
-
-
-
         }
     }
-
-    // .addresscheck__error {
-    //     font-size: .7rem;
-    //     text-align: center;
-    //     color: red;
-    // }
-
-    // .thanks__padding {
-    //     padding: 1rem 0 1rem 0;
-    // }
-
-    // .fa-check-circle {
-    //     color: rgb(0, 214, 166);
-    //     font-size: 4rem;
-    // }
-
-    // .fa-times-circle {
-    //     color: #d929ae;
-    //     font-size: 4rem;
-    // }
 
     .errorInfo {
         font-family: $font-source;
@@ -984,9 +614,6 @@
 
     .petRotate {
         transform: rotate(360deg);
-
         transition: 2s;
     }
-
-
 }

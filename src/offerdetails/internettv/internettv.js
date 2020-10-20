@@ -5,15 +5,9 @@ import Footer from '../../footer/footer';
 import Border from '../../border/border';
 import { Link } from 'react-scroll';
 import listaProgramow from '../../images/listaprogramow.jpg';
-// import { useHistory } from "react-router";
 import { Link as Router } from 'react-router-dom';
 
 const Internettv = () => {
-
-    // const history = useHistory();
-    // const toContactSection = () => {
-    //     history.push("/Kontakt")
-    // }
 
     return (
         <>

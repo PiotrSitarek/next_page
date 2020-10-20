@@ -1,18 +1,15 @@
 @media (max-width: 450px) {
     .about_slider {
+        width: 100%;
+        height: 20rem;
+        display: block;
+        display: flex;
         position: relative;
-
-        .about_sliderFoto {
-            width: 100%;
-            height: 40vh;
-            opacity: .15;
-
-        }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .about_slogan {
-            position: absolute;
-            top: 20%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 1.5rem;
@@ -20,9 +17,7 @@
         }
 
         .about_slogan2 {
-            position: absolute;
-            top: 35%;
-            width: 100%;
+            margin: 0 0 1rem 0;
             text-align: center;
             font-family: $font-source;
             font-size: 1.5rem;
@@ -30,19 +25,15 @@
         }
 
         .about_slogan3 {
-            position: absolute;
-            top: 50%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 0.9rem;
             font-weight: 600;
+            margin: 0 0 .5rem 0;
+
         }
 
         .about_slogan4 {
-            position: absolute;
-            top: 60%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 0.9rem;
@@ -65,7 +56,6 @@
                 font-family: $font-source;
                 font-size: .8rem;
                 padding: .4rem 0 .4rem 0;
-                // margin-left: 12rem;
                 width: 7rem;
                 transition: all 0.5s;
                 cursor: pointer;
@@ -98,25 +88,37 @@
                 opacity: 1;
                 right: 0;
             }
-
         }
+    }
+
+    .about_slider::after {
+        content: "";
+        background: url('../images/2.jpg');
+        opacity: .4;
+        background-position: center;
+        height: 100%;
+        top: 0;
+        left: -100px;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
     }
 }
 
 @media(min-width:450px)and(max-width:700px) {
     .about_slider {
+        width: 100%;
+        height: 23rem;
+        display: block;
+        display: flex;
         position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        .about_sliderFoto {
-            width: 100%;
-            height: 45vh;
-            opacity: .15;
-        }
 
         .about_slogan {
-            position: absolute;
-            top: 20%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 1.8rem;
@@ -125,29 +127,22 @@
         }
 
         .about_slogan2 {
-            position: absolute;
-            top: 35%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 1.8rem;
             font-weight: 600;
+            margin: 0 0 1rem 0;
         }
 
         .about_slogan3 {
-            position: absolute;
-            top: 54%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 1.2rem;
             font-weight: 600;
+            margin: 0 0 .5rem 0;
         }
 
         .about_slogan4 {
-            position: absolute;
-            top: 66%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 1.2rem;
@@ -155,161 +150,85 @@
         }
 
         .about_buttonsContainer {
-            // position: absolute;
-            // top: 70%;
-            // width: 100%;
-            // display: flex;
-            // justify-content: center;
             display: none;
-
-            // .about_button {
-            //     border-radius: 4px;
-            //     background-color: #00D6A6;
-            //     border: none;
-            //     color: #FFFFFF;
-            //     text-align: center;
-            //     font-family: $font-source;
-            //     font-size: 1rem;
-            //     padding: .5rem .5rem .5rem .5rem;
-            //     width: 8rem;
-            //     transition: all 0.5s;
-            //     cursor: pointer;
-            //     margin: 5px;
-            // }
-
-            // .about_button span {
-            //     cursor: pointer;
-            //     display: inline-block;
-            //     position: relative;
-            //     transition: 0.5s;
-
-            // }
-
-            // .about_button span:after {
-
-            //     content: '\00bb';
-            //     position: absolute;
-            //     opacity: 0;
-            //     top: 0;
-            //     right: -20px;
-            //     transition: 0.5s;
-            // }
-
-            // .about_button:hover span {
-            //     padding-right: 25px;
-            // }
-
-            // .about_button:hover span:after {
-            //     opacity: 1;
-            //     right: 0;
-            // }
-
         }
+    }
+
+    .about_slider::after {
+        content: "";
+        background: url('../images/2.jpg');
+        opacity: .4;
+        background-position: center;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
     }
 }
 
 @media(min-width:700px) {
 
     .about_slider {
+        width: 100%;
+        height: 25rem;
+        display: block;
+        display: flex;
         position: relative;
-
-        .about_sliderFoto {
-            width: 100%;
-            height: 55vh;
-            opacity: .15;
-
-        }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .about_slogan {
-            position: absolute;
-            top: 25%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 2.5rem;
             font-weight: 600;
+            margin: .5rem 0 0 0;
         }
 
         .about_slogan2 {
-            position: absolute;
-            top: 37%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 2.5rem;
             font-weight: 600;
+            margin: 0 0 .5rem 0;
         }
 
         .about_slogan3 {
-            position: absolute;
-            top: 55%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 1.6rem;
             font-weight: 600;
+            margin: .5rem 0 .5rem 0;
         }
 
         .about_slogan4 {
-            position: absolute;
-            top: 65%;
-            width: 100%;
             text-align: center;
             font-family: $font-source;
             font-size: 1.6rem;
             font-weight: 600;
+            margin: .5rem 0 .5rem 0;
         }
 
         .about_buttonsContainer {
-            // position: absolute;
-            // top: 75%;
-            // width: 100%;
-            // display: flex;
-            // justify-content: center;
             display: none;
-
-            // .about_button {
-            //     border-radius: 4px;
-            //     background-color: #00D6A6;
-            //     border: none;
-            //     color: #FFFFFF;
-            //     text-align: center;
-            //     font-family: $font-source;
-            //     font-size: 1.5rem;
-            //     padding: .5rem .5rem .5rem .5rem;
-            //     width: 12rem;
-            //     transition: all 0.5s;
-            //     cursor: pointer;
-            //     margin: 5px;
-            // }
-
-            // .about_button span {
-            //     cursor: pointer;
-            //     display: inline-block;
-            //     position: relative;
-            //     transition: 0.5s;
-
-            // }
-
-            // .about_button span:after {
-
-            //     content: '\00bb';
-            //     position: absolute;
-            //     opacity: 0;
-            //     top: 0;
-            //     right: -20px;
-            //     transition: 0.5s;
-            // }
-
-            // .about_button:hover span {
-            //     padding-right: 25px;
-            // }
-
-            // .about_button:hover span:after {
-            //     opacity: 1;
-            //     right: 0;
-            // }
-
         }
+    }
+
+    .about_slider::after {
+        content: "";
+        background: url('../images/2.jpg');
+        opacity: .4;
+        background-position: center;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
     }
 }
