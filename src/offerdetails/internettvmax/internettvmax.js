@@ -4,7 +4,7 @@ import Header from '../../header/header';
 import Footer from '../../footer/footer';
 import Border from '../../border/border';
 import { Link } from 'react-scroll';
-import listaProgramow from '../../images/listaprogramow.jpg';
+import listaProgramow from '../../images/listaprogramow.webp';
 import { Link as Router } from 'react-router-dom';
 
 

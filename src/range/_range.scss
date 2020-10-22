@@ -201,6 +201,15 @@
         font-size: 3rem;
         margin-bottom: 1.5rem;
     }
+
+    .formInputs {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: #f1e8e8 solid 1px;
+    }
 }
 
 @media(min-width:450px)and(max-width:700px) {
@@ -405,6 +414,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .formInputs {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: #f1e8e8 solid 1px;
     }
 
 
@@ -615,5 +633,14 @@
     .petRotate {
         transform: rotate(360deg);
         transition: 2s;
+    }
+
+    .formInputs {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: #f1e8e8 solid 1px;
     }
 }

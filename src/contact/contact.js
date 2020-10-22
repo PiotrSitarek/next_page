@@ -35,7 +35,7 @@ const Contact = () => {
                             thanksSecond.classList.add("thanks__style")
                             formElements.appendChild(thanks);
                             formElements.appendChild(thanksSecond);
-                            thanks.innerHTML = "Dziękuje za kontakt."
+                            thanks.innerHTML = "Dziękuję za kontakt."
                             thanksSecond.innerHTML = "Oddzwonię najszybciej jak to możliwe."
                         })
 
@@ -73,7 +73,7 @@ const Contact = () => {
                             <Field name="phoneNumber" validate={mustBePhoneNumber} >
                                 {({ input, meta }) => (
                                     <fieldset className="contactform__positioner" >
-                                        <input {...input} type="tel" className="contactform__input w3-input w3-animate-input" placeholder="+48 ..." />
+                                        <input {...input} type="tel" className="contactform__input" placeholder="+48 ..." />
                                         {meta.error && meta.touched && <span className="contactform__error">{meta.error}</span>}
                                     </fieldset>
                                 )}

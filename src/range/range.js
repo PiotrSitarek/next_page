@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router";
 import { Form, Field } from 'react-final-form';
 import { OnChange } from 'react-final-form-listeners';
-import netpet from '../images/netpet.jpg';
+import netpet from '../images/pet.webp';
 import { uniqBy } from "lodash";
 
 const Range = () => {
@@ -219,7 +219,7 @@ const Range = () => {
                             <Field name="cityName" validate={required}>
                                 {({ input, meta }) => (
                                     <div className="suggestionsPositioner" >
-                                        <input {...input} type="text" className="formInputs cityNameInput w3-input w3-animate-input" value={cityText} placeholder="Miasto..." />
+                                        <input {...input} type="text" className="formInputs cityNameInput" value={cityText} placeholder="Miasto..." />
                                         {meta.error && meta.touched && <span className="addresscheck__error">{meta.error}</span>}
                                         {renderCitySuggestions()}
                                     </div>
@@ -229,7 +229,7 @@ const Range = () => {
                             <Field name="streetName" validate={required}>
                                 {({ input, meta }) => (
                                     <div className="suggestionsPositioner">
-                                        <input {...input} type="text" className="formInputs streetNameInput w3-input w3-animate-input" value={streetText} placeholder="Ulica..." />
+                                        <input {...input} type="text" className="formInputs streetNameInput" value={streetText} placeholder="Ulica..." />
                                         {meta.error && meta.touched && <span className="addresscheck__error">{meta.error}</span>}
                                         {renderStreetSuggestions()}
                                     </div>
@@ -239,7 +239,7 @@ const Range = () => {
                             <Field name="buildingNumber" validate={buildingNumberValidator}>
                                 {({ input, meta }) => (
                                     <div className="suggestionsPositioner">
-                                        <input {...input} type="text" className="formInputs w3-input w3-animate-input" placeholder="Numer budynku..." />
+                                        <input {...input} type="text" className="formInputs" placeholder="Numer budynku..." />
                                         {meta.error && meta.touched && <span className="addresscheck__error">{meta.error}</span>}
                                     </div>
                                 )}
