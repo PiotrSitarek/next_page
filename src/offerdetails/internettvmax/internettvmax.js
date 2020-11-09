@@ -4,7 +4,7 @@ import Header from '../../header/header';
 import Footer from '../../footer/footer';
 import Border from '../../border/border';
 import { Link } from 'react-scroll';
-import listaProgramow from '../../images/listaprogramow.webp';
+import listaProgramow from '../../images/listaprogramow.jpg';
 import { Link as Router } from 'react-router-dom';
 
 
@@ -28,8 +28,9 @@ const Internettvmax = () => {
 
 
                 <div className="offerDetails_internet-add">
+                    <p className="internet_add-text internet_add-text-tel">- Abonament przez pierwsze 3 miesiące za 0zł!</p>
                     <p className="internet_add-text">- Jednorazowy koszt instalacji usług to 61zł. </p>
-                    <p className="internet_add-text">- Abonament przez pierwszy miesiąc za 0zł.</p>
+                    {/* <p className="internet_add-text">- Abonament przez pierwszy miesiąc za 0zł.</p> */}
                     <p className="internet_add-text">- Umowa na 24 miesiące.</p>
                     <p className="internet_add-text">- Router wifi oraz dekoder w cenie.</p>
                     <p className="internet_add-text">- Możliwość wybrania dodatkowego dekodera (multiroom) za 10 zł miesięcznie</p>
@@ -38,6 +39,7 @@ const Internettvmax = () => {
                     <p className="internet_add-text internet_add-text-tel">- Telefon stacjonarny BEZ LIMITU za 10 zł!</p>
                     <p className="internet_add-text internet_add-text-tel">- Telefon komórkowy BEZ LIMITU+2 GB za 20 zł!</p>
                 </div>
+                <p className="offerDetails_internet-text">Zapytaj o ofertę na 12 miesięcy!</p>
                 <Router to="/Kontakt"><button className="toContactSection_button"><span>Zamów</span></button></Router>
                 <Border />
                 <p className="internet_add-text internet_add-text-options">pozostałe opcje internetu z telewizją:</p>

@@ -1,6 +1,7 @@
 {
   "short_name": "Netia",
   "name": "Telewizja Kablowa Netia",
+  "description": "Netia, oferta usług stacjonarnych - telewizja, internet, telefon",
   "icons": [
     {
       "src": "favicon.ico",

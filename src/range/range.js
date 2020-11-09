@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router";
 import { Form, Field } from 'react-final-form';
 import { OnChange } from 'react-final-form-listeners';
-import netpet from '../images/pet.webp';
+import netpet from '../images/pet.jpg';
 import { uniqBy } from "lodash";
 
 const Range = () => {

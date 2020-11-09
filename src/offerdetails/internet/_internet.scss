@@ -76,6 +76,10 @@
         opacity: 1;
         right: 0;
     }
+
+    .internet_add-text-promo {
+        font-weight: 700;
+    }
 }
 
 @media(min-width:450px)and(max-width:700px) {
@@ -156,6 +160,10 @@
         opacity: 1;
         right: 0;
     }
+
+    .internet_add-text-promo {
+        font-weight: 700;
+    }
 }
 
 @media(min-width:700px) {
@@ -235,5 +243,9 @@
     .toContactSection_button:hover span:after {
         opacity: 1;
         right: 0;
+    }
+
+    .internet_add-text-promo {
+        font-weight: 700;
     }
 }

@@ -37,7 +37,7 @@ const Header = () => {
     }, [])
 
     useEffect(() => {
-        if (window.location.hash === "#/Internet" || window.location.hash === "#/Internet+Telewizja_M" || window.location.hash === "#/Internet+Telewizja_L" || window.location.hash === "#/Kontakt") {
+        if (window.location.hash === "#/Internet" || window.location.hash === "#/Internet+Telewizja_M" || window.location.hash === "#/Internet+Telewizja_L" || window.location.hash === "#/Kontakt" || window.location.hash === "#/kontakt") {
             const header_navigation = document.querySelector(".header_navigation")
             header_navigation.classList.add("mobilePageNav_remove");
         }
