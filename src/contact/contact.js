@@ -63,7 +63,7 @@ const Contact = () => {
                             errorCall.classList.add("thanks__style")
                             formElements.appendChild(thanks);
                             formElements.appendChild(errorCall);
-                            thanks.innerHTML = "Problem z formularzem, spróbuj później lub zadzwoń do nas!"
+                            thanks.innerHTML = "Problem z formularzem, spróbuj później lub zadzwoń do mnie!"
                             errorCall.innerHTML = "693-665-558"
                         });
                 }
