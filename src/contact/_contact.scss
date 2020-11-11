@@ -40,6 +40,15 @@
 
         }
 
+        .contactform__positioner {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
         .contactform__input {
             font-family: $font-source;
             width: 100%;
@@ -47,14 +56,16 @@
             margin: 8px 0;
             box-sizing: border-box;
             border: none;
+            text-align: center;
             border-bottom: #f1e8e8 solid 1px;
         }
 
         .contactform__error {
             font-family: $font-source;
-            font-size: 1rem;
+            font-size: .7rem;
             text-align: center;
             margin-top: .4rem;
+            color: red;
 
         }
 
@@ -185,6 +196,25 @@
 
         }
 
+        .contactform__positioner {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .contactform__error {
+            font-family: $font-source;
+            font-size: .8rem;
+            text-align: center;
+            margin-top: .4rem;
+            color: red;
+
+        }
+
         .contactform__input {
             font-family: $font-source;
             width: 100%;
@@ -192,15 +222,8 @@
             margin: 8px 0;
             box-sizing: border-box;
             border: none;
-            border-bottom: #f1e8e8 solid 1px;
-        }
-
-        .contactform__error {
-            font-family: $font-source;
-            font-size: 1rem;
             text-align: center;
-            margin-top: .4rem;
-
+            border-bottom: #f1e8e8 solid 1px;
         }
 
         .checkbox_container {
@@ -332,6 +355,16 @@
 
         }
 
+
+        .contactform__positioner {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
         .contactform__input {
             font-family: $font-source;
             width: 100%;
@@ -339,14 +372,16 @@
             margin: 8px 0;
             box-sizing: border-box;
             border: none;
+            text-align: center;
             border-bottom: #f1e8e8 solid 1px;
         }
 
         .contactform__error {
             font-family: $font-source;
-            font-size: 1rem;
+            font-size: .7rem;
             text-align: center;
             margin-top: .4rem;
+            color: red;
 
         }
 

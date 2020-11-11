@@ -1,12 +1,15 @@
 import React from 'react';
 import { Form, Field } from 'react-final-form';
-import firebase from '../firebase/firebase';
+// import firebase from '../firebase/firebase';
+import axios from 'axios';
 
 const Contact = () => {
 
     const phoneNumberFormula = /^[1-9]{1}[0-9]{8}$/;
 
     const mustBePhoneNumber = value => (!phoneNumberFormula.test(value) ? 'Wpisz poprawny numer telefonu' : undefined)
+
+    const API_PATH = 'https://netia-zamowienia.pl/index.php';
 
     return (
         <section className="mainPage_contact">
@@ -16,15 +19,25 @@ const Contact = () => {
                 const userCheckBox = document.getElementById('userCheck');
                 if (userCheckBox.checked === true) {
 
-                    const time = new Date();
-                    const day = time.toLocaleDateString()
-                    const dayTime = time.toLocaleTimeString()
+                    // const time = new Date();
+                    // const day = time.toLocaleDateString()
+                    // const dayTime = time.toLocaleTimeString()
 
-                    firebase.firestore().collection('contact-numbers').add({
+                    // firebase.firestore().collection('contact-numbers').add({
 
-                        "contact-number": `${fields.phoneNumber} ->  ${day} - ${dayTime}`
+                    //     "contact-number": `${fields.phoneNumber} ->  ${day} - ${dayTime}`
 
+                    // })
+
+                    axios({
+                        method: 'post',
+                        url: `${API_PATH}`,
+                        headers: { 'content-type': 'application/json' },
+                        data: fields.phoneNumber
                     })
+                        // .then(result => {
+                        //     console.log(result)
+                        // })
                         .then(function () {
 
                             const formElements = document.querySelector(".contactform")
@@ -39,6 +52,7 @@ const Contact = () => {
                             thanksSecond.innerHTML = "Oddzwonię najszybciej jak to możliwe."
                         })
 
+
                         .catch(function (error) {
 
                             const formElements = document.querySelector(".contactform")
@@ -50,16 +64,16 @@ const Contact = () => {
                             formElements.appendChild(thanks);
                             formElements.appendChild(errorCall);
                             thanks.innerHTML = "Problem z formularzem, spróbuj później lub zadzwoń do nas!"
-                            errorCall.innerHTML = "697-401-784"
+                            errorCall.innerHTML = "693-665-558"
                         });
                 }
+
                 else {
                     const firstAlert = document.querySelector(".firstAlert")
                     firstAlert.classList.add("checkBoxAlert");
-
-
                 }
-            }}
+            }
+            }
                 render={({ handleSubmit, pristine, invalid }) => (
 
                     <form onSubmit={handleSubmit} className="contactform" id="contact_section_ID">
