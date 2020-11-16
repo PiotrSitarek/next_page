@@ -44,14 +44,14 @@ const Offer = () => {
                 <div className="offer_singleOffer">
                     <h1 className="singleOffer_text">Internet + telewizja</h1>
                     <p className="singleOffer_text">300 Mb/s z wifi</p>
-                    <p className="singleOffer_text">+ 100 programów</p>
+                    <p className="singleOffer_text">+100 programów</p>
                     <p className="singleOffer_text">60zł*</p>
                     <button onClick={toInternetTvDetails} className="offer_button"><span>Szczegóły</span></button>
                 </div>
                 <div className="offer_singleOffer">
                     <h1 className="singleOffer_text">Internet + telewizja</h1>
                     <p className="singleOffer_text">150 Mb/s z wifi</p>
-                    <p className="singleOffer_text">+ 183 programy</p>
+                    <p className="singleOffer_text">+183 programy</p>
                     <p className="singleOffer_text">80zł*</p>
                     <button onClick={toInternetTvMaxDetails} className="offer_button"><span>Szczegóły</span></button>
                 </div>

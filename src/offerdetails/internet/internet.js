@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TopBar from '../../topBar/topBar';
 import Header from '../../header/header';
 import Footer from '../../footer/footer';
@@ -7,6 +7,10 @@ import { Link } from 'react-router-dom';
 
 
 const Internet = () => {
+
+    useEffect(() => {
+        document.title = "Netia - Internet"
+    }, []);
 
 
     return (

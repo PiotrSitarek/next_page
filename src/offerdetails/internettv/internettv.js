@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TopBar from '../../topBar/topBar';
 import Header from '../../header/header';
 import Footer from '../../footer/footer';
@@ -9,6 +9,10 @@ import { Link as Router } from 'react-router-dom';
 
 
 const Internettv = () => {
+
+    useEffect(() => {
+        document.title = "Netia - Internet+Telewizja_M"
+    }, []);
 
     return (
         <>

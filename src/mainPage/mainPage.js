@@ -14,7 +14,6 @@ const MainPage = () => {
 
     return (
         <>
-
             <TopBar />
             <Header />
             <About />
