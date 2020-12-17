@@ -85,6 +85,30 @@
             padding: .4rem .4rem .4rem .4rem;
         }
     }
+
+    .phoneIcon_link {
+        color: white;
+
+        .phoneIcon_container {
+            background-color: rgb(26, 240, 26);
+            padding: 1rem 1rem 1rem 1rem;
+            border-radius: 50%;
+            position: fixed;
+            bottom: .5rem;
+            right: .5rem;
+            z-index: 1;
+            cursor: pointer;
+
+            .fa-phone {
+
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .phoneIcon_link:active {
+        color: #ff008b;
+    }
 }
 
 @media(min-width:450px)and(max-width:700px) {
@@ -169,6 +193,33 @@
             padding: .5rem .5rem .5rem .5rem;
         }
     }
+
+
+    .phoneIcon_link {
+        color: white;
+
+        .phoneIcon_container {
+            background-color: rgb(26, 240, 26);
+            padding: 1rem 1rem 1rem 1rem;
+            border-radius: 50%;
+            position: fixed;
+            bottom: .5rem;
+            right: .5rem;
+            z-index: 1;
+            cursor: pointer;
+
+            .fa-phone {
+
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .phoneIcon_link:active {
+        color: #ff008b;
+    }
+
+
 }
 
 @media(min-width:700px) {
@@ -251,5 +302,9 @@
         }
 
 
+    }
+
+    .phoneIcon_link {
+        display: none;
     }
 }

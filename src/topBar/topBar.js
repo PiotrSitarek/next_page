@@ -18,6 +18,8 @@ const TopBar = () => {
         const cookiesInfo_container = document.querySelector(".cookiesInfo_container")
         cookiesInfo_container.style.display = "none";
         sessionStorage.setItem("cookieInfo", "Consent");
+        // const phoneIcon_link = document.querySelector(".phoneIcon_link")
+        // phoneIcon_link.style.display = "block";
     }
 
 
@@ -29,10 +31,16 @@ const TopBar = () => {
                     <i className="fas fa-cookie-bite"></i>
                     <div>
                         <p>Ta strona korzysta z plików cookie aby świadczyć usługi na najwyższym poziomie.</p>
-                        <p>Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich użycie.</p>
+                        {/* <p>Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich użycie.</p> */}
                     </div>
-                    <button onClick={cookieInfoReaction} className="cookie__button">Zgoda</button>
+                    <button onClick={cookieInfoReaction} className="cookie__button">Rozumiem</button>
                 </div>
+                <a href="tel:+48693665558" className="phoneIcon_link" >
+                    <div className="phoneIcon_container">
+                        <i className="fas fa-phone"></i>
+                    </div>
+                </a>
+
                 <div className="topBar_mailContainer">
                     <i className="far fa-envelope mainPage_topBar_icon mainPage_topBar_icon_envelope "></i>
                     <a className="mainPage_topBar_text mainPage_topBar_mail" href="mailto:piotr.sitarek@przedstawiciel.netia.pl">piotr.sitarek@przedstawiciel.netia.pl</a>

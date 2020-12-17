@@ -10,9 +10,9 @@ import { Link as Router } from 'react-router-dom';
 
 const Internettv = () => {
 
-    useEffect(() => {
-        document.title = "Netia - Internet+Telewizja_M"
-    }, []);
+    // useEffect(() => {
+    //     document.title = "Netia - Internet+Telewizja_M"
+    // }, []);
 
     return (
         <>

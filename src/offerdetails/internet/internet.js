@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 
 const Internet = () => {
 
-    useEffect(() => {
-        document.title = "Netia - Internet"
-    }, []);
+    // useEffect(() => {
+    //     document.title = "Netia - Internet"
+    // }, []);
 
 
     return (

@@ -6,9 +6,9 @@ import Contact from '../contact/contact'
 
 const ContactSection = () => {
 
-    useEffect(() => {
-        document.title = "Kontakt"
-    }, []);
+    // useEffect(() => {
+    //     document.title = "Kontakt"
+    // }, []);
 
 
     return (

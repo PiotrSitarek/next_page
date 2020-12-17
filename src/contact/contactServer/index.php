@@ -13,5 +13,5 @@ $subject = $_POST;
 // Send
 // mail('piotr.sitarek.05@gmail.com', $subject, $message);
 
-mail('piotr.sitarek@netia-zamowienia.pl', $subject, "Dzwoń");
+mail('piotr.sitarek@netia-zamowienia.pl', $subject, "Klient czeka! Powodzenia");
 ?>
