@@ -33,7 +33,7 @@ const Range = () => {
 
     useEffect(() => {
 
-        fetch(`https://netia-zamowienia.pl/database.json`)
+        fetch(`https://piotrsitarek.pl/next_page/database.json`)
             .then((response) => response.json())
             .then((response) => setAllDataBase(response.database))
     }, []);

@@ -43,11 +43,11 @@ const TopBar = () => {
 
                 <div className="topBar_mailContainer">
                     <i className="far fa-envelope mainPage_topBar_icon mainPage_topBar_icon_envelope "></i>
-                    <a className="mainPage_topBar_text mainPage_topBar_mail" href="mailto:piotr.sitarek@przedstawiciel.netia.pl">piotr.sitarek@przedstawiciel.netia.pl</a>
+                    <a className="mainPage_topBar_text mainPage_topBar_mail" href="mailto:xxx.xxx@przedstawiciel.netia.pl">xxx.xxx@przedstawiciel.netia.pl</a>
                 </div>
                 <div className="topBar_phoneContainer">
                     <i className="fas fa-phone mainPage_topBar_icon mainPage_topBar_icon_phone"></i>
-                    <a className="mainPage_topBar_text mainPage_topBar_text-number" href="tel:+48693665558"> 693 665 558</a>
+                    <a className="mainPage_topBar_text mainPage_topBar_text-number" href="tel:+48404404404"> 404 404 404</a>
                 </div>
             </section>
         </>

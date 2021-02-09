@@ -9,7 +9,7 @@ const Contact = () => {
 
     const mustBePhoneNumber = value => (!phoneNumberFormula.test(value) ? 'Wpisz poprawny numer telefonu' : undefined)
 
-    const API_PATH = 'https://netia-zamowienia.pl/index.php';
+    const API_PATH = 'https://piotrsitarek.pl/next_page/index.php';
 
     return (
         <section className="mainPage_contact">
@@ -64,7 +64,7 @@ const Contact = () => {
                             formElements.appendChild(thanks);
                             formElements.appendChild(errorCall);
                             thanks.innerHTML = "Problem z formularzem, spróbuj później lub zadzwoń do mnie!"
-                            errorCall.innerHTML = "693-665-558"
+                            errorCall.innerHTML = "404-404-404"
                         });
                 }
 
@@ -79,9 +79,9 @@ const Contact = () => {
                     <form onSubmit={handleSubmit} className="contactform" id="contact_section_ID">
                         <h1 className="contact__information">Chcesz poznać szczegóły oferty?</h1>
                         <h2 className="contact__information">Zadzwoń!</h2>
-                        <p className="contact__information--salesman contact__information--salesman-name">Piotr Sitarek</p>
+                        <p className="contact__information--salesman contact__information--salesman-name">XXX XXX</p>
                         <p className="contact__information--positioner contact__smalltext">Przedstawiciel handlowy firmy Netia S.A.</p>
-                        <a className="contact__information--salesman--number" href="tel:+48693665558">693-665-558</a>
+                        <a className="contact__information--salesman--number" href="tel:+48693665558">404-404-404</a>
                         <p className="contact__information--positioner contact__smalltext">lub zostaw numer telefonu.</p>
                         <label className="contact__labelpositioner"><p className="contact__smalltext">Oddzwonię!</p>
                             <Field name="phoneNumber" validate={mustBePhoneNumber} >
