@@ -35,7 +35,7 @@ const TopBar = () => {
                     </div>
                     <button onClick={cookieInfoReaction} className="cookie__button">Rozumiem</button>
                 </div>
-                <a href="tel:+48693665558" className="phoneIcon_link" >
+                <a href="tel:+48404404404" className="phoneIcon_link" >
                     <div className="phoneIcon_container">
                         <i className="fas fa-phone"></i>
                     </div>
